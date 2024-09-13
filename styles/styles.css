@@ -1,0 +1,74 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav h2 {
+    padding: 2%;
+  }
+  
+  nav > div:first-of-type {
+    margin-left: auto; /* Empuja el primer div y todo lo demás a la derecha */
+  }
+  nav > div {
+    display: flex;
+    padding: 3px 5%;
+  }
+  .carouselContainer{
+    width: 100%;
+    height: 75vh;
+    background-color: #d6d6d6;
+  }
+  .containerSentidos{
+    display: flex;
+    justify-content: center;
+  }
+.containerAbout{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        justify-content: center;
+    }
+    img{
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+.menu-section {
+    margin: 20px 0;
+}
+.menu-section h2 {
+    border-bottom: 2px solid #8c8c8c;
+    margin-bottom: 10px;
+}
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.menu-item span {
+    margin-right: 10px;
+}
+.menu-item .price {
+    white-space: nowrap;
+}
+.menu-section p {
+    font-size: 0.9em;
+    color: #555;
+}
