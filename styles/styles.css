@@ -1,4 +1,41 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+.oswald-abc {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.halant-light {
+  font-family: "Halant", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.halant-regular {
+  font-family: "Halant", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.halant-medium {
+  font-family: "Halant", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.halant-semibold {
+  font-family: "Halant", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.halant-bold {
+  font-family: "Halant", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0px;
@@ -7,6 +44,7 @@ body {
 nav {
     display: flex;
     align-items: center;
+    font-family: "Oswald";
   }
   
   nav h2 {
@@ -20,23 +58,96 @@ nav {
     display: flex;
     padding: 3px 5%;
   }
-  .carouselContainer{
+  .containerHero{
     width: 100%;
     height: 75vh;
     background-color: #d6d6d6;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor principal */
+#contenedor {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Estilo general para las imágenes que se mueven */
+.imagen-cayendo {
+  position: absolute;
+  width: 300px;
+  pointer-events: none;
+  animation: caer 10s linear infinite;
+}
+
+/* Animación de entrada, caída y salida */
+@keyframes caer {
+  0% {
+    top: -100px; /* Fuera de la vista en la parte superior */
+    opacity: 0; /* Comienza invisible */
+  }
+  50% {
+    top: 50vh; /* Parte media de la pantalla */
+    opacity: 1; /* Totalmente visible */
+  }
+  100% {
+    top: 3000px; /* Fuera de la vista en la parte inferior */
+    opacity: 0; /* Se desvanece al final */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .containerSentidos{
     margin: 5% 0px;
     display: flex;
     justify-content: center;
     background-color: antiquewhite;
+    .sentidos{
+      font-family: "Oswald";
+    }
   }
 .containerAbout{
   margin: 5% 0px;
     width: 100%;
     height: 40vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: #d6d6d6;
     div{
@@ -45,9 +156,11 @@ nav {
         align-items: center;
         width: 50%;
         justify-content: center;
+        font-family: "Oswald";
     }
-    img{
-        width: 50%;
+    .imgAbout{
+        height: 40vh;
+        
     }
 }
 .containerRedes{
@@ -63,8 +176,10 @@ nav {
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     .frase{
       text-align: center;
+      font-family: "Oswald";
     }
   }
   .containerBotonesRedes{
@@ -86,6 +201,11 @@ nav {
   background-size: cover;
   background-position:  center center;
   background-repeat: no-repeat;
+  font-family: "Oswald";
+  .perfEq{
+    font-size: 50px;
+    letter-spacing: 4px;
+  }
 }
 .contenedorNuestrosServicios{
   margin: 5% 0px;
@@ -93,16 +213,21 @@ nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
   h3{
+    font-family: "Oswald";
     width: 100%;
     text-align: center;
   }
   .parrafoNuestrosServicios{
+    font-family: "halant-medium";
+    letter-spacing: 1px;
     text-align: center;
     margin: 30px;
   }
   .servicio{
-    width: 23%;
+    max-width: 400px;
+    width: 45%;
     margin: 1%;
     background-color: antiquewhite;
     display: flex;
@@ -111,6 +236,7 @@ nav {
     justify-content: space-around;
     h4, h5{
       text-align: center;
+      font-family: "Oswald";
     }
     img{
       width: 100%;
@@ -119,7 +245,7 @@ nav {
 }
 footer{
   width: 100%;
-  height: 15vh;
+  height: 17vh;
   background-color: crimson;
   display: flex;
   flex-direction: column;
@@ -131,7 +257,25 @@ footer{
 
   }
 }
-
+.parrafoFooter, .contacto{
+  margin: 5px 5px 0px 5px;
+  font-family: "Oswald";
+}
+.botonFooter{
+  
+}
+a:link, a:visited{
+  text-decoration: none;
+  color: black;
+  width: 50px;
+}
+.containerBotonesFooter{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5px;
+}
 
 
 .menu-section {
